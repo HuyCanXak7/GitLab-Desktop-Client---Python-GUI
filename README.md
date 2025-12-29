@@ -21,33 +21,25 @@
 - Chạy Windows / Linux / MacOS với GUI Tkinter
 
 **Cài đặt:**
-
 ```bash
 # clone repo
 git clone https://github.com/HuyCanXak7/gitlab-desktop-client.git
 cd gitlab-desktop-client
-
 # cài dependencies
 pip install requests keyring pygments ttkbootstrap
-Chạy ứng dụng:
 
+Chạy ứng dụng:
 bash
 Sao chép mã
 python gitlab_gui_pro_full.py
 Build file .exe (Windows) với PyInstaller:
-
 bash
-Sao chép mã
 pip install pyinstaller
 pyinstaller --onefile --noconsole --hidden-import=keyring gitlab_gui_pro_full.py
+
 Hướng dẫn sử dụng:
-
 Nhập Personal Access Token từ GitLab (scope: api)
-
 Click “Đăng nhập” → tự động load groups & projects
-
 Mở treeview để lazy-load subgroup / project / repository / file
-
 Click project để upload file/folder hoặc xem code
-
 Lưu cache, log, và sử dụng dark mode theo nhu cầu
